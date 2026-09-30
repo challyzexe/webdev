@@ -1,0 +1,32 @@
+p {
+    color:palevioletred;
+}
+
+h1 {
+    color:teal;
+
+}
+
+main p {
+    color: blueviolet;
+}
+
+header h1{
+    color:purple;
+
+}
+
+#whatsup {
+    color:red;
+
+}
+
+.blue {
+    color:darkcyan;
+
+}
+
+.bigger{
+    font-size: 15pt;
+    font-weight: bold;
+}
