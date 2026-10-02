@@ -1,0 +1,24 @@
+body {
+    font-family: monospace;
+    color: rgb(249, 253, 214);
+    font-size: small;
+    background-color: darkcyan;
+}
+
+a {
+    color: white;
+}
+
+.demph {
+    color: rgb(242, 213, 250);
+}
+
+.emph {
+    color: darkblue;
+}
+
+#copyit {
+    color: darkblue;
+    font-size: medium;
+    font-style: oblique;
+}
