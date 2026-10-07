@@ -1,0 +1,22 @@
+body {
+    font-family: monospace;
+    color: rgb(255, 255, 255);
+    background-color: darkred;
+    background-image: url(Untitled\ design\ \(7\).png);
+}
+
+header {
+    background-image: url(star.png);
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.beach {
+    width: 250px;
+}
+
+.bullet {
+    list-style-image: url(dot.png);
+    
+}
