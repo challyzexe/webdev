@@ -17,7 +17,7 @@ h1{
     list-style-image: url(fish.png);
 }
 
-.active {
+#active {
     background-color: darkcyan;
     color: antiquewhite;
 }
