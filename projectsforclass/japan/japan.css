@@ -1,0 +1,18 @@
+body {
+    font-family: monospace;
+    background-image: url(backy.png);
+    background-repeat: repeat;
+}
+h1{
+    color: rgb(3, 124, 124);
+}
+
+.flag {
+    background-image: url(japanaa.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+ 
+.bullet {
+    list-style-image: url(fish.png);
+}
