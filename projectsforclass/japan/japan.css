@@ -16,3 +16,8 @@ h1{
 .bullet {
     list-style-image: url(fish.png);
 }
+
+.active {
+    background-color: darkcyan;
+    color: antiquewhite;
+}
