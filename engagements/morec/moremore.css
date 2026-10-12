@@ -1,0 +1,24 @@
+body {
+    font-family: monospace;
+}
+
+
+* {
+    box-sizing: border-box;
+    outline: red solid 1px;
+}
+
+.p1 {
+    width: 200px;
+    height: 200px;
+    margin: 100px;
+    padding: 80px;
+    border: 5px solid darkcyan;
+}
+.p2 {
+    width: 200px;
+    height: 150px;
+    margin: 20px;
+    padding: 50px;
+    border: 8px dotted palevioletred ;
+}
