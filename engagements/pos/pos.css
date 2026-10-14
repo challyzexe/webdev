@@ -1,0 +1,37 @@
+body {
+    font-family: monospace;
+}
+
+.guitfig {
+    border: 2px solid red;
+    width: 250;
+    overflow: scroll;
+    float: left;
+}
+
+.guitfig img {
+    width: 100%;
+}
+
+.enforcer {
+    clear: both;
+}
+
+.relative {
+    position: relative;
+    top: 20px;
+    left: 40px;
+  }
+
+  .absolute {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .fixed {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+  }
+  
