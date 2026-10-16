@@ -1,0 +1,76 @@
+body {
+    font-family: monospace;
+    font-size: 12;
+    color: azure;
+    background-color: darkcyan;
+    line-height: normal;
+    text-align: left;     
+    line-height: 1.5;
+
+}
+
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    text-shadow: 1px 1px black;
+    font-style: italic;
+    text-align: center;
+}
+
+.boxes {
+    border: 5px solid rgb(241, 241, 241);
+    border-radius: 30px;
+    box-shadow: 7px 7px 7px black;
+    height: 250;
+    width: 250;
+    overflow: scroll;
+    float: left;
+    margin: 20px;
+    padding: 20px;
+}
+
+
+
+.guita {
+    border: 5px solid rgb(241, 241, 241);
+    border-radius: 30px;
+    box-shadow: 7px 7px 7px black;
+    height: 250;
+    width: 250;
+    overflow: scroll;
+    float: left;
+    margin: 20px;
+    padding: 20px;
+    
+}
+
+.background {
+    background-image: url(layoutpics/backy.png);
+    background-repeat: repeat;
+    color: darkcyan;
+    background-clip: padding-box;
+}
+
+.navi {
+    color: rgb(247, 247, 247);              
+    transition: color 0.3s;    
+}
+
+.navi:hover {
+    border: 5px solid rgb(241, 241, 241);
+    border-radius: 30px;
+    box-shadow: 7px 7px 5px black;
+    color: darkcyan; 
+    background-color: beige;               
+  }
+
+  .enforcer {
+    clear: both;
+}
+
+#wrappa {
+    width: 800px;
+    margin: 0 auto;
+    border: thin solid white;
+}
