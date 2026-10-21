@@ -1,0 +1,28 @@
+body {
+    font-family: monospace;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+nav a{
+    border: 1px dashed darkblue;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    padding: 5px 10px;
+}
+
+.layout {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.card {
+    border: 1px solid darkred;
+    padding: 10px;
+    margin: 10px;
+}
