@@ -4,10 +4,16 @@ body {
     background-color: rgb(132, 36, 55);
 }
 
+header {
+    display: grid;
+    justify-content: center;
+}
+
 nav {
     display: flex;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     justify-content: space-evenly;
+    padding-bottom: 5px;
 }
 
 nav a{
@@ -22,13 +28,12 @@ nav a{
 }
 
 .right {
-    float: right;
-    width: 250px;
-    margin-left: 20px;
-    margin-bottom: 20px;
-    background-color: #f4f4f4;
-    padding: 15px;
-  }
+    float: left;
+    width: .5fr;
+    padding: 10px;
+    color: black;
+    background-color: white;
+}
 
 
 .layout {
@@ -41,4 +46,14 @@ nav a{
     border: 5px solid rgb(255, 255, 255);
     padding: 10px;
     margin: 10px;
+    text-align: center;
+}
+
+.multilink {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+footer a {
+    color: beige;
 }
