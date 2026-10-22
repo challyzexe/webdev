@@ -32,7 +32,7 @@ nav a{
     width: .5fr;
     padding: 10px;
     color: black;
-    background-color: white;
+    background-color: beige;
 }
 
 
@@ -43,7 +43,7 @@ nav a{
 }
 
 .card {
-    border: 5px solid rgb(255, 255, 255);
+    border: 5px solid beige;
     padding: 10px;
     margin: 10px;
     text-align: center;
@@ -56,4 +56,5 @@ nav a{
 
 footer a {
     color: beige;
+
 }
