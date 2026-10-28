@@ -80,6 +80,35 @@ main img{
     gap: 10px;
 }
 
+@media ONLY screen AND (max-width: 680px){
+    .sideby {
+        flex-direction: column-reverse;
+    }
+
+    .ashide {
+        width: 100%;
+    }
+    main {
+        width: 100%;
+    }
+
+    .card {
+        width: 95%;
+    }
+
+    .card img {
+        width: 100%;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        margin-bottom: 5px;
+    }
+}
+
 @media print {
     nav {
         display: none;
