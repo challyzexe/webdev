@@ -1,0 +1,121 @@
+body{
+    font-family: monospace;
+}
+
+body h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+header {
+    background-color: darkcyan;
+    color: white;
+    padding: 5px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 5px;
+}
+
+nav a{
+    display: block;
+    display: flex;
+    padding: 5px;
+    color: darkcyan;
+    background-color: #fbf5d8;
+    border-radius: 6px;
+    border: 1px solid darkcyan;
+    margin-top: 5px;
+ }
+
+ .bodylayout {
+    display: flex;
+    gap: 10px;
+ }
+
+ .ash {
+    display: block;
+    background-color: darkcyan;
+    width: 20%;
+    padding: 20px;
+    justify-content: left;
+    align-content: flex-start;
+    color: aliceblue;
+    text-align: left;
+ }
+ 
+.ash figure{
+    margin: 0;
+}
+
+ .ash img{
+    width: 100%;
+}
+
+
+ .built {
+    width: 80%;
+ }
+
+ .cardlay{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+ }
+
+ article {
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 250px;
+    overflow: hidden;
+    background-color: rgb(208, 208, 208);
+    color: rgb(14, 72, 69);
+    text-align: center;
+    margin: 10px auto;
+ }
+
+ @media ONLY screen AND (max-width: 680px){
+
+    .bodylayout {
+        flex-direction: column-reverse;
+    }
+
+    .ash {
+        width: 100%;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    article {
+        width: 95%;
+    }
+
+    article img {
+        width: 100%;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        margin-bottom: 5px;
+    }
+}
+
+@media print {
+    nav {
+        display: none;
+    }
+    aside {
+        display: none;
+    }
+    body {
+        font-family: 'Times New Roman', Times, serif;
+    }
+}
+
