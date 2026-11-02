@@ -56,6 +56,7 @@ nav a{
 
 
  .built {
+    display: block;
     width: 80%;
  }
 
@@ -81,7 +82,7 @@ nav a{
     .bodylayout {
         flex-direction: column-reverse;
     }
-
+    
     .ash {
         width: 100%;
     }
@@ -91,7 +92,7 @@ nav a{
     }
 
     article {
-        width: 95%;
+        width: 100%;
     }
 
     article img {
