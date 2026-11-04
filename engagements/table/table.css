@@ -1,3 +1,32 @@
 body{
     font-family: monospace;
 }
+
+#schedule {
+    border: 1px solid darkcyan;
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+
+#schedule th, #schedule td {
+    border: 1px solid darkcyan;
+}
+
+#schedule th {
+    background-color: darkcyan;
+    color: white;
+}
+
+#schedule tr:nth-child(even) {
+    background-color: lightpink;
+    
+}
+
+#schedule td:nth-child(2) {
+    background-color: blue;
+    color: aliceblue;
+}
+
+#schedule td:last-child{
+    text-align: right;
+}
