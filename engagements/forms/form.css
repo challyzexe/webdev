@@ -1,0 +1,37 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+fieldset {
+    background-color: rgb(255, 227, 185);
+    border: thin dotted black;
+    border-radius: 15px;
+}
+
+.formrow, .checkrow {
+    margin: 10px 0;
+    display: flex;
+    gap: 10px;
+}
+
+.formrow label {
+    width: 150px;
+    text-align: right;
+}
+
+.spacer {
+    width: 150px;
+    text-align: right;
+}
+
+
+@media ONLY screen AND (max-width: 500px){
+    .formrow, .checkrow {
+        flex-direction: column;
+    }
+    
+    .formrow label {
+        text-align: left;
+
+    }
+}
