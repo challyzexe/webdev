@@ -69,4 +69,9 @@ textarea {
     .roww label {
         text-align: left;
     }
+
+    input[type="submit"]{
+        display: block;
+        left: 25%;
+    }
 }
