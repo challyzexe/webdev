@@ -19,7 +19,7 @@
     </nav>
     <main>
         <h1>Sign up</h1>
-        <form action="formprocessing.html" method="post">
+        <form action="formprocessing.html" method="post" id="myForm">
             <fieldset>
                 <legend>Account Credentials</legend>
                 <div class="formrow">
@@ -38,8 +38,8 @@
                 </div>
 
                 <div class="formrow">
-                    <label for="personname">Date</label>
-                    <input id="personname" type="date" name="fullname" placeholder="Full Name"> 
+                    <label for="datt">Date</label>
+                    <input id="datt" type="date" name="fullname" placeholder="Full Name"> 
                 </div>
 
                 <div class="formrow">
@@ -81,12 +81,56 @@
             <li>What makes for a good mobile form? - column stacked</li>
 
         </ul>
+
+        <h2>Engagement nov 16</h2>
+        <ul>
+            <li>What is JavaScript? How did it get its name? - Programming language that allows to change and modify a webpage. Name from a marketing ploy to be more popular from java</li>
+            <li>What are the two ways you can run JavaScript? - in a browser, DOM, or node.js 
+            </li>
+            <li>What is jQuery? Is it still popular today? - simplified open version of javascript, yes it is popular</li>
+            <li>What is the most popular front-end js library today? - React</li>
+            <li>How does your code prevent the form from being submitted? Why do we need to prevent it? - the event.preventDefault</li>
+        </ul>
         
     </main>
     <footer>
         &copy; 2026 Challyze Catubay
 
     </footer>
+
+    <script>
+        document.getElementById('myForm').addEventListener('submit',function(event) {
+            event.preventDefault();
+            alert("Form Submitted");
+
+            const personname = document.getElementById('personname').value;
+            const shmemail = document.getElementById('shmemail').value;
+            const pash = document.getElementById('pash').value;
+            const datt = document.getElementById('datt').value;
+
+            if (!personname || !shmemail) {
+                alert("You need a name and Email");
+                return;
+            }
+
+            if (!datt || datt <18) {
+                alert("You need a name and Email");
+                return;
+            }
+
+            const formData = {
+                name: personname,
+                email: shmemail,
+                password: pash,
+                age: datt
+            };
+
+            console.log(formData);
+
+
+        });
+
+    </script>
 
     
 </body>
