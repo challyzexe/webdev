@@ -18,6 +18,7 @@
 
     </nav>
     <main>
+        <div id="message"></div>
         <h1>Sign up</h1>
         <form action="formprocessing.html" method="post" id="myForm">
             <fieldset>
@@ -91,6 +92,14 @@
             <li>What is the most popular front-end js library today? - React</li>
             <li>How does your code prevent the form from being submitted? Why do we need to prevent it? - the event.preventDefault</li>
         </ul>
+
+        <h2>Engagement nov 18</h2>
+        <ul>
+            <li>What is AJAX - a synchronus javascript and xHtml. It allows things to change on a website without completely changing the url or what the page is. It sends messahes to get from somewhere else</li>
+            <li>Why do you put your JS Code in a separate file? - it makes it easier to maintain instad of just having all data and request in one file</li>
+            <li>How do you use the inspector (DevTools) to debug your JavaScript? How do you find the line number of an error? - it will tell you error messages and reference where they are at within</li>
+            <li>Do your form and fields have the same ids that your JavaScript uses? Does the Console show any errors? List your ids, and fix any errors before you submit. yup</li>
+        </ul>
         
     </main>
     <footer>
@@ -113,10 +122,6 @@
                 return;
             }
 
-            if (!datt || datt <18) {
-                alert("You need a name and Email");
-                return;
-            }
 
             const formData = {
                 name: personname,
@@ -126,6 +131,21 @@
             };
 
             console.log(formData);
+            const xhr = new XMLHttpRequest();
+            xhr.open("GET","submit.json", true);
+            xhr.setRequestHeader("Content-Type","application.json;charset=UTF-8")
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4&& xhr.status === 200) {
+                    alert('Form worked');
+                    message = document.getElementById('message');
+                    const response = JSON.parse(xhr.responseText);
+                    message.textContent = response.message;
+                } else if (xhr.readyState === 4) {
+                    alert('didnt work')
+                }
+            };
+            xhr.send(JSON.stringify(formData));
+            alert('Worked: ${personame}');
 
 
         });
