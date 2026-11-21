@@ -106,51 +106,8 @@
         &copy; 2026 Challyze Catubay
 
     </footer>
-
-    <script>
-        document.getElementById('myForm').addEventListener('submit',function(event) {
-            event.preventDefault();
-            alert("Form Submitted");
-
-            const personname = document.getElementById('personname').value;
-            const shmemail = document.getElementById('shmemail').value;
-            const pash = document.getElementById('pash').value;
-            const datt = document.getElementById('datt').value;
-
-            if (!personname || !shmemail) {
-                alert("You need a name and Email");
-                return;
-            }
-
-
-            const formData = {
-                name: personname,
-                email: shmemail,
-                password: pash,
-                age: datt
-            };
-
-            console.log(formData);
-            const xhr = new XMLHttpRequest();
-            xhr.open("GET","submit.json", true);
-            xhr.setRequestHeader("Content-Type","application.json;charset=UTF-8")
-            xhr.onreadystatechange = function () {
-                if (xhr.readyState === 4&& xhr.status === 200) {
-                    alert('Form worked');
-                    message = document.getElementById('message');
-                    const response = JSON.parse(xhr.responseText);
-                    message.textContent = response.message;
-                } else if (xhr.readyState === 4) {
-                    alert('didnt work')
-                }
-            };
-            xhr.send(JSON.stringify(formData));
-            alert('Worked: ${personame}');
-
-
-        });
-
-    </script>
+    
+    <script src="proj.js"></script>
 
     
 </body>
