@@ -27,7 +27,7 @@ document.getElementById('myForm').addEventListener('submit',function(event) {
 
     console.log(formData);
     const xhr = new XMLHttpRequest();
-    xhr.open("GET", "submit.json", true);
+    xhr.open("GET", "submit.json?" + params.toString(), true);
 
     xhr.onreadystatechange = function () {
         if (xhr.readyState === 4 && xhr.status === 200) {
@@ -46,8 +46,8 @@ document.getElementById('myForm').addEventListener('submit',function(event) {
         }
     };
 
-    xhr.send(JSON.stringify(formData));
-    alert('Worked: ${personname}');
+    xhr.send();
+    alert(`Worked: ${personname}`);
     alert("Form Submitted");
 
 
